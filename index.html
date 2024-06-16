@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convesor de moneda</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <div class="title">Convertidor de divisas</div>
+  <div class="input">
+    <label for="monto">Cantidad:</label>
+    <input type="text" id="monto" placeholder="Ingresa aca el monto del dinero">
+  </div>
+
+  <div class="input">
+    <label for="de">De:</label>
+    <select name="de" id="de">
+      <option value="10">Bolivianos</option>
+      <option value="20">Pesos Chilenos</option>
+      <option value="30">Pesos Mexicanos</option>
+      <option value="40">Pesos argentinos</option>
+      <option value="50">Dolares</option>
+    </select>
+  </div>
+
+  <div class="input">
+    <label for="a">A:</label>
+    <select name="a" id="a">
+      <option value="10">Bolivianos</option>
+      <option value="20">Pesos Chilenos</option>
+      <option value="30">Pesos Mexicanos</option>
+      <option value="40">Pesos argentinos</option>
+      <option value="50">Dolares</option>
+    </select>
+  </div>
+
+ 
+        <div class="buttonContainer">
+            <input type="button" value="Convertir" onclick="convertir()">
+        </div>
+        
+        <p>El resultado es: <span id="respuesta"></span></p>
+    
+</body>
+</html>
